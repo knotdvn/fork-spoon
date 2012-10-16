@@ -1,0 +1,54 @@
+
+
+
+/* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none;}
+
+
+
+
+
+/*dvn*/
+h1,h2{
+	text-style: underline;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+p{
+	font-size: 14px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+#timeline img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#timeline a {
+    display: inline;
+}
+#timeline p {
+    display: inline-block;
+}
+
+#main_frame ul{
+    list-style: katakana-iroha;
+    margin-left:40px;
+}
+#timeline li {
+    margin-top: 40px;
+}
