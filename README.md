@@ -153,6 +153,17 @@ Welcome! First!
 	
 	Congratulations! You can now contribute with all of SU-ITS-OP!
 	
+	
+	
+Tutorial Timeline	
+=================
+
+Try and view the tutorial_timeline.html file. Try and add yourself onto the timeline!
+
+
+Concepts and Commands
+=====================
+	
 	Here is a short-list of commands and concepts and a short description
 	note to read an extensive all text manual type: man git
 	
@@ -171,6 +182,9 @@ Welcome! First!
 	
 	git push origin master || updates the master repo with your local repo
 	
+	git fetch || this updates your origin with any changes found in the master (update)
+	
+	git fetch ".git url" || this updates your local repo with a GitHub repo 
 	
 	
 	
