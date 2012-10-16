@@ -5,7 +5,7 @@ SU ITS OPSS SPIDERS git / GitHub Tutorial
 
 This is a simple tutorial covering the spiders usage of git and github.
 
-Please view the visual reference folders, to see diagrams which explain aspects of this tutorial.
+Please view the diagrams in this repo which explain aspects of this tutorial.
 
 Concept:
 --------
@@ -33,6 +33,10 @@ Welcome! First!
 1. Navigate to the repo on GitHub https://github.com/su-its-op/fork-spoon
 
 	-This is the 'web-view' for the tutorial repository.
+	
+
+
+	
 
 2. Fork the repo to your individual GitHub Account.
 
@@ -48,6 +52,9 @@ Welcome! First!
 
 	At this point the repo only exists on GitHub.
 
+	
+	
+	
 3. Clone the repo onto your local machine.
 
 	-open a terminal
@@ -57,22 +64,27 @@ Welcome! First!
 	-in the terminal type: cd ~/Desktop
 	(you are now at the Desktop.)
 
-	-type: mkdir git
-	(this creates a folder on the desktop called git)
+	-type: mkdir git_demo
+	(this creates a folder on the desktop called git_demo)
 
-	-type: cd git
+	-type: cd git_demo
 	(you are now in that folder)
 
 	-type: git clone [the url of your git repo]
 	(see note in step 2 example: https://github.com/knotdvn/fork-spoon.git ) 
-
+	(git refers to the unix command which runs the git program, clone and the url are paramaters passed to the program)
+	(the git program parses its paramaters and decides to "clone the url repo into the current local directory")
+	
 	-this downloads the repo into your current directory, you now have the repo files on your machine.
+	
 
 
+	
+	
 4. Modify and save changes to your repo.
 
 	-open the fork-spoon folder in the file browser.
-	(from your desktop click on the git folder, then the fork-spoon folder)
+	(from your desktop click on the git_demo folder, then the fork-spoon folder)
 
 	-open the proof folder
 
@@ -82,7 +94,7 @@ Welcome! First!
 	-open this text file, add some text to it, save file
 	(example: "I did it!")
 
-	-back in the terminal, type: cd proof
+	-back in the terminal, get to the proof folder in fork-spoon type: cd ~/Desktop/git_demo/fork-spoon/proof
 	(you're now in the proof folder)
 
 	- type: git add YOURNAME.txt
@@ -95,10 +107,83 @@ Welcome! First!
 	-type: git commit -m "I added my file"
 	(-m stands for message) its a useful tag for identifying what the commit did, you will have lots of commits in a repo
 
-	-at this point your local repo on you machine is saved 
+	-at this point your local git repo on you machine is saved and up to date,  
 
 	-type: git push origin master
-	this sends your local repo "origin" to the repo you cloned  
+	you will have to provide your GitHub username and password
+	this sends your local repo "origin" to the repo you cloned it from "master" 
+	
+	-navigate your web browser to your GitHub page for the fork-spoon repo you forked.
+	example: https://github.com/knotdvn/fork-spoon (use your page not knotdvn!)
+	check the file in proof and verify that it exists and was modified.
+	
+	Congratulations, You can now: [Fork] [Clone] [Add] [Stage] [Commit] and [Push]!
+	
+	This is the essence of git and GitHub. But there is so much more, Now lets update the
+	SU-ITS-OP Repo so it too stores our proof file.
+	
+
+
+
+
+5. Update SU-ITS-OP with your individual Forked repo
+	
+	-Navigate with the web browser to the GitHub page for your individual forked repo
+	example: https://github.com/knotdvn/fork-spoon (use your page not knotdvn!)
+	
+	-Click on the pull request button,
+	(top of page next to unwatch)
+	
+	-Make sure that the two repos are positioned like this:
+	SU-ITS-OP/fork-spoon  <-  knotdvn/fork-spoon (use your page not knotdvn!)
+	(this indicates the flow, from your fork back to the original)
+	
+	-Give your pull request a TITLE, and write a little message.
+	this message will be seen by a senior developer who will approve the request
+	try to give a meaning full message if necessary, list any major functional modifcations,
+	features added, or bugs fixed.
+	
+	-You can view info about your pull request
+	use the Commits tab and the Files Changed tab.
+	this is a history of your changes and a color coded representation of the difference between the two repos.
+	
+	-Click Send Pull Request
+	When a senior developer approves your pull request, the SU-ITS-OP repo will contain your
+	"proof file". We will know you have completed the tutorial, and are git-competent.
+	
+	Congratulations! You can now contribute with all of SU-ITS-OP!
+	
+	Here is a short-list of commands and concepts and a short description
+	note to read an extensive all text manual type: man git
+	
+	origin || Your local repo, on your local filesystem
+	master || Wherever you cloned your repo from, almost always a ".git" url to GitHub
+	fork   || creates a repo just for you on GitHub from a pre-existing repo
+	clone  || creates a repo on your local machine from a GitHub ".git" url
+	push   || sends changes from one repo to another
+	pull   || accept changes sent from another repo
+	pull request || ask for a repo to accept changes you made on your fork 
+	
+	git add -A   || Adds every file in the directory to the git repo, useful when creating a project
+	git stage -A || Stages every file in the directory to be ready for commit
+	
+	git commit -m || updates your local repo with local filesystem changes
+	
+	git push origin master || updates the master repo with your local repo
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
 
 
 	
