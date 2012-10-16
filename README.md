@@ -87,8 +87,8 @@ Welcome! First!
 	(from your desktop click on the git_demo folder, then the fork-spoon folder)
 
 	-open the proof folder
-
-	- create a new text file in this folder
+	
+	-create a new text file in this folder
 	(right click add new document, YOURNAME.txt, see others for example)
 
 	-open this text file, add some text to it, save file
@@ -97,7 +97,7 @@ Welcome! First!
 	-back in the terminal, get to the proof folder in fork-spoon type: cd ~/Desktop/git_demo/fork-spoon/proof
 	(you're now in the proof folder)
 
-	- type: git add YOURNAME.txt
+	-type: git add YOURNAME.txt
 	(whatever your file was called,)
 	this adds the file to gits list of file which belong in the repo.
 
